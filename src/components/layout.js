@@ -3,6 +3,7 @@ import PropTypes from 'prop-types'
 import { StaticQuery, graphql } from 'gatsby'
 
 import Navbar from './navbar'
+import Aside from './aside'
 import Footer from './footer'
 import './layout.scss'
 
@@ -19,11 +20,11 @@ const Layout = ({ children }) => (
     `}
     render={data => (
       <>
-        <Navbar siteTitle={data.site.siteMetadata.title} />
+        <Navbar siteTitle={data.site.siteMetadata.title} />        
         <div>
-          {children}
-          <Footer />
+          {children}          
         </div>
+        <Footer />
       </>
     )}
   />
