@@ -1,6 +1,9 @@
 import React from 'react'
 import { graphql } from 'gatsby'
 import Aside from '../components/aside'
+import Layout from '../components/layout'
+
+import '../components/layout.scss'
 
 
 export default function Template({
@@ -9,7 +12,7 @@ export default function Template({
   const { markdownRemark } = data
   const { frontmatter, html } = markdownRemark
   return (    
-       
+    <Layout>
       <main className="grid--aside">
       <Aside />
       <article className="blog">
@@ -27,6 +30,7 @@ export default function Template({
       </div>      
     </article>
     </main>
+    </Layout>
   )
 }
 

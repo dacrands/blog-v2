@@ -19,8 +19,7 @@ const Layout = ({ children }) => (
       }
     `}
     render={data => (
-      <>
-        <Navbar siteTitle={data.site.siteMetadata.title} />        
+      <>        
         <div>
           {children}          
         </div>
