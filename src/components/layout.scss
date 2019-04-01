@@ -673,12 +673,16 @@ $black: #141519;
   small {
     display: block;
     font-size: 70%;
+
   }
   ul {
     list-style: none;    
     margin: 0;
   }
-
+  li {
+    margin-bottom: 0.5rem;
+    
+  }
   .citation {
     color: $primary;
     transition: all 200ms ease;
