@@ -637,9 +637,10 @@ pre tt:after {
 $primary: #3150bf;
 $primary-very-light: #9baef5;
 $primary-light: #5f7ef0;
-$primary-dark: #042291;
+$primary-dark: #132463;
 $font-light: #fefeff;  
 $med: #6e717e;
+$black: #141519;
 // $font-visit: #ebca83;  
 
 .content {
@@ -664,6 +665,40 @@ $med: #6e717e;
   }
 }
 
+.footer {
+  background: $black;
+  padding: 1rem;
+  margin-top: 1rem;
+  color: $primary;
+  small {
+    display: block;
+    font-size: 70%;
+  }
+  ul {
+    list-style: none;    
+    margin: 0;
+  }
+
+  .citation {
+    color: $primary;
+    transition: all 200ms ease;
+    &:hover {
+      color: $font-light;
+    }
+  }
+}
+
+
+.footer__link {
+  display: inline-block;
+  color: $primary-light;
+  text-decoration: none;
+  transition: all 200ms ease;
+  &:hover {
+    color: $font-light;
+  }
+}
+
 .header {
   padding: 2rem;
   h1 {
@@ -678,7 +713,7 @@ $med: #6e717e;
 .grid--aside {
   display: grid;
   grid-template-columns: 220px 1fr;
-  overflow: hidden;
+  overflow: hidden;  
 }
 
 
@@ -687,7 +722,7 @@ $med: #6e717e;
   padding: 0 2rem;
   display: flex;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
   grid-gap: 20px;
 
 }
@@ -721,6 +756,7 @@ $med: #6e717e;
 
 .aside {
   background: $primary;  
+  
 }
 
 .aside__nav {
@@ -748,6 +784,11 @@ $med: #6e717e;
   small {
     line-height: 100%;    
   }
+  &:hover {
+    h2 {
+      text-decoration: underline;
+    }    
+  }  
 }
 
 .aside__nav-link {

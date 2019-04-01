@@ -2,16 +2,19 @@ import React from 'react'
 
 const Footer = () => (
   <footer className="footer">
-  <div>
+  <small>
     {/* <a href="">Resume</a> */}
-    <a className="footer__link" href="https://github.com/dacrands">Github</a>
-    <a className="footer__link" href="mailto:davecrands@gmail.com">Email</a>
-  </div>
-  <div>
+    <ul>
+      <li><a className="footer__link" href="mailto:davecrands@gmail.com">Email</a></li>
+      <li><a className="footer__link" href="https://github.com/dacrands" target="_blank" rel="noopener noreferrer">Github</a></li>
+    </ul>        
+  </small>  
+  <small>
     © {new Date().getFullYear()},
               {` `}
-    David Crandall
-              </div>
+              <a className="citation" href="http://crandall.dev" target="_blank" rel="noopener noreferrer">David Crandall</a>
+    
+              </small>
   </footer>
 )
 

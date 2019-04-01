@@ -2,14 +2,14 @@ import React from 'react'
 import { graphql, Link } from 'gatsby'
 import Layout from '../components/layout'
 import SEO from '../components/seo'
-import Navbar from '../components/navbar'
+import Footer from '../components/footer'
 
 
 
 const IndexPage = ({data}) => (
   <Layout>
     <SEO title="Home" keywords={[`David Crandall`, `web developer`, `react`]} />
-    <Navbar />    
+    {/* <Navbar />     */}
     <header className="header"> 
       <div className="container">
         <h1>David's Blog</h1>        
@@ -33,7 +33,8 @@ const IndexPage = ({data}) => (
               </Link>
           })
         }    
-      </div>             
+      </div>        
+      <Footer/>     
   </Layout>
 )
 

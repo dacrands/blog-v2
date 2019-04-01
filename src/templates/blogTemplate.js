@@ -1,9 +1,9 @@
 import React from 'react'
 import { graphql } from 'gatsby'
 import Aside from '../components/aside'
+import Footer from '../components/footer'
 import Layout from '../components/layout'
 
-import '../components/layout.scss'
 
 
 export default function Template({
@@ -27,7 +27,7 @@ export default function Template({
           className="blog__post-content"
           dangerouslySetInnerHTML={{ __html: html }}
         />        
-      </div>      
+      </div>     
     </article>
     </main>
     </Layout>
