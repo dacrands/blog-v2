@@ -643,15 +643,28 @@ $med: #6e717e;
 $black: #141519;
 // $font-visit: #ebca83;  
 
+// ==============
+//   HELPERS
+// ==============
 .flex-center {
   display: flex; 
   justify-content: center;
+  align-items: center;
 }
 
 .content {
   max-width: 500px;
 }
 
+.grid--aside {
+  display: grid;
+  grid-template-columns: 220px 1fr;
+  overflow: hidden;  
+}
+
+// ==============
+//   ELEMENTS
+// ==============
 .navbar {
   // outline: 1px solid red;  
   background: $primary;
@@ -743,11 +756,6 @@ $black: #141519;
   align-items: center;
 }
 
-.grid--aside {
-  display: grid;
-  grid-template-columns: 220px 1fr;
-  overflow: hidden;  
-}
 
 
 .pages {
