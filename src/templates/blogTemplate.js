@@ -4,32 +4,28 @@ import Aside from '../components/aside'
 import Footer from '../components/footer'
 import Layout from '../components/layout'
 
-
-
-export default function Template({
-  data,
-}) {
+export default function Template({ data }) {
   const { markdownRemark } = data
   const { frontmatter, html } = markdownRemark
-  return (    
+  return (
     <Layout>
       <main className="grid--aside">
-      <Aside />
-      <article className="blog">
-      <header className="blog__header">        
-        <div className="container">
-          <h1>{frontmatter.title}</h1>                    
-          <h3>{frontmatter.date}</h3>          
-        </div>        
-      </header>
-      <div className="blog__post">
-        <div 
-          className="blog__post-content"
-          dangerouslySetInnerHTML={{ __html: html }}
-        />        
-      </div>     
-    </article>
-    </main>
+        <Aside />
+        <article className="blog">
+          <header className="blog__header">
+            <div className="container">
+              <h1>{frontmatter.title}</h1>
+              <h3>{frontmatter.date}</h3>
+            </div>
+          </header>
+          <div className="blog__post">
+            <div
+              className="blog__post-content"
+              dangerouslySetInnerHTML={{ __html: html }}
+            />
+          </div>
+        </article>
+      </main>
     </Layout>
   )
 }

@@ -2,43 +2,41 @@ import React from 'react'
 
 import Layout from '../components/layout'
 import SEO from '../components/seo'
-import { graphql, Link } from 'gatsby';
+import { graphql, Link } from 'gatsby'
 
-const SecondPage = ({data}) => (
+const SecondPage = ({ data }) => (
   <Layout>
     <SEO title="Blog" />
-    <header className="header header--green"> 
+    <header className="header header--green">
       <div className="container">
         <h1 className="text-focus-in">Blog</h1>
-        <hr/>
+        <hr />
         <p>This is where I write about programming.</p>
-      </div>    
-    </header> 
+      </div>
+    </header>
     <div className="pages">
       <div className="pages__container">
-        {
-          data.allMarkdownRemark.edges.map(post => {
-            return <Link className="pages__item"
-              to={post.node.frontmatter.path}
-            >
+        {data.allMarkdownRemark.edges.map(post => {
+          return (
+            <Link className="pages__item" to={post.node.frontmatter.path}>
               <div className="pages__item-title">
                 <h3>{post.node.frontmatter.title}</h3>
                 <h4>{post.node.frontmatter.date}</h4>
-              </div>                
+              </div>
               <div className="pages__item-content">
                 <p>{post.node.frontmatter.info}</p>
-              </div>              
-              </Link>
-          })
-        }    
-      </div>      
-    </div>       
+              </div>
+            </Link>
+          )
+        })}
+      </div>
+    </div>
   </Layout>
 )
 
 export const pageQuery = graphql`
   query BlogQuery {
-    allMarkdownRemark(sort:{ order: DESC, fields: [frontmatter___date]}) {
+    allMarkdownRemark(sort: { order: DESC, fields: [frontmatter___date] }) {
       edges {
         node {
           frontmatter {
@@ -52,6 +50,5 @@ export const pageQuery = graphql`
     }
   }
 `
-
 
 export default SecondPage

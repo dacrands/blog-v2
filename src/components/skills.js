@@ -17,102 +17,74 @@ const Skills = () => (
     <div className="logos__container">
       <div className="container">
         <div className="logos__title">
-          <h1>Skills</h1>        
+          <h1>Skills</h1>
           <h3>Most of my projects feature the following...</h3>
-        </div>        
-        
+        </div>
 
         <table className="logos__table">
           <tr>
             <th>Features</th>
             <td>
-            <ul>
-              {
-                [
-                  "AJAX", 
-                  "responsive web design", 
-                  "semantic HTML", 
-                  "email authentication", 
-                  "REST APIs",
-                  "relational databases"
+              <ul>
+                {[
+                  'AJAX',
+                  'responsive web design',
+                  'semantic HTML',
+                  'email authentication',
+                  'REST APIs',
+                  'relational databases',
                 ].map(skill => (
                   <li>{skill}</li>
-                ))
-              }              
-            </ul>
+                ))}
+              </ul>
             </td>
-          </tr>          
+          </tr>
           <tr>
             <th>Languages</th>
             <td>
-            <ul>
-              {
-                [
-                  "Python", 
-                  "JavaScript", 
-                  "HTML", 
-                  "CSS"
-                ].map(skill => (
+              <ul>
+                {['Python', 'JavaScript', 'HTML', 'CSS'].map(skill => (
                   <li>{skill}</li>
-                ))
-              }              
-            </ul>
+                ))}
+              </ul>
             </td>
-          </tr>          
+          </tr>
           <tr>
-            <th>Frameworks/
-              <br/>
-              Libraries</th>
+            <th>
+              Frameworks/
+              <br />
+              Libraries
+            </th>
             <td>
-            <ul>
-            {
-                [
-                  "React", 
-                  "Flask", 
-                  "Redux", 
-                  "Gatsby", 
-                  "Webpack",
-                  "Sass",                   
-                ].map(skill => (
-                  <li>{skill}</li>
-                ))
-              } 
-            </ul>
+              <ul>
+                {['React', 'Flask', 'Redux', 'Gatsby', 'Webpack', 'Sass'].map(
+                  skill => (
+                    <li>{skill}</li>
+                  )
+                )}
+              </ul>
             </td>
           </tr>
           <tr>
             <th>Tools</th>
             <td>
-            <ul>
-            {
-                [
-                  "Git", 
-                  "Nginx", 
-                  "Postman",                                     
-                  "PuTTy",
-                  "Prettier", 
-                ].map(skill => (
+              <ul>
+                {['Git', 'Nginx', 'Postman', 'PuTTy', 'Prettier'].map(skill => (
                   <li>{skill}</li>
-                ))
-              } 
-            </ul>
+                ))}
+              </ul>
             </td>
           </tr>
           <tr>
             <th>Hosting</th>
             <td>
-            <ul>
-            {
-                [
-                  "DigitalOcean", 
-                  "Heroku", 
-                  "Gitpages", 
-                  "Netlify ",                                
-                ].map(skill => (
-                  <li>{skill}</li>
-                ))
-              } 
-            </ul>
+              <ul>
+                {['DigitalOcean', 'Heroku', 'Gitpages', 'Netlify '].map(
+                  skill => (
+                    <li>{skill}</li>
+                  )
+                )}
+              </ul>
             </td>
           </tr>
         </table>
@@ -156,8 +128,7 @@ const styles = {
     width: '200px',
     margin: '1rem',
     // float: 'left',
-  }
+  },
 }
 
-export default Skills;
-
+export default Skills

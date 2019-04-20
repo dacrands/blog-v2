@@ -3,20 +3,23 @@ import PropTypes from 'prop-types'
 import React, { Component } from 'react'
 
 class Navbar extends Component {
-  constructor(props){
+  constructor(props) {
     super(props)
-    
   }
 
   render() {
     return (
       <nav className="navbar">
         <ul>
-          <li><Link to="/">Home</Link></li>
-          <li><Link to="/blog">Blog</Link></li>
+          <li>
+            <Link to="/">Home</Link>
+          </li>
+          <li>
+            <Link to="/blog">Blog</Link>
+          </li>
         </ul>
       </nav>
-    )    
+    )
   }
 }
 

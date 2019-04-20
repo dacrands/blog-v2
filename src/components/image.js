@@ -26,18 +26,22 @@ const Image = () => (
         }
       }
     `}
-    render={data => 
-    <div className="card">
-      <Img className="card__img" fluid={data.placeholderImage.childImageSharp.fluid} />
-      <div className="card__text">
-        <h3>Lorem, ipsum dolor.</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur earum dolorum possimus nulla consequatur?</p>
+    render={data => (
+      <div className="card">
+        <Img
+          className="card__img"
+          fluid={data.placeholderImage.childImageSharp.fluid}
+        />
+        <div className="card__text">
+          <h3>Lorem, ipsum dolor.</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur
+            earum dolorum possimus nulla consequatur?
+          </p>
+        </div>
       </div>
-    </div>    
-    }
+    )}
   />
 )
-
-
 
 export default Image
