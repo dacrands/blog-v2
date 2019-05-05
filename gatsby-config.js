@@ -34,11 +34,11 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `gatsby-starter-default`,
-        short_name: `starter`,
+        name: `David Crandall Blog`,
+        short_name: `Crandall BLog`,
         start_url: `/`,
-        background_color: `#042291`,
-        theme_color: `#042291`,
+        background_color: `#3150bf`,
+        theme_color: `#3150bf`,
         display: `minimal-ui`,
         icon: `src/images/dc-logo-purple.png`, // This path is relative to the root of the site.
       },
