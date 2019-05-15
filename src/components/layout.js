@@ -2,7 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { StaticQuery, graphql } from 'gatsby'
 
-import './layout.scss'
+import '../styles/main.scss'
 
 const Layout = ({ children }) => (
   <StaticQuery
@@ -18,7 +18,6 @@ const Layout = ({ children }) => (
     render={data => (
       <>
         <div>{children}</div>
-        {/* <Footer /> */}
       </>
     )}
   />

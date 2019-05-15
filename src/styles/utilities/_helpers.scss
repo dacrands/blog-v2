@@ -1,0 +1,15 @@
+.flex-center {
+  display: flex; 
+  justify-content: center;
+  align-items: center;
+}
+
+.content {
+  max-width: 500px;
+}
+
+.grid--aside {
+  display: grid;
+  grid-template-columns: 220px 1fr;
+  overflow: hidden;  
+}

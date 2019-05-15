@@ -1,0 +1,17 @@
+.navbar {
+  // outline: 1px solid red;  
+  background: $primary;
+  a {
+    display: block;
+    margin: 0.5rem 1rem;
+    color: $font-light;    
+  }
+  ul {
+    list-style: none;
+    display: flex;    
+  }
+  ul,
+  li {
+    margin: 0;    
+  }
+}
