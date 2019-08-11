@@ -1,7 +1,6 @@
 import React from 'react'
 import { graphql } from 'gatsby'
 import Aside from '../components/aside'
-import Footer from '../components/footer'
 import Layout from '../components/layout'
 
 export default function Template({ data }) {
