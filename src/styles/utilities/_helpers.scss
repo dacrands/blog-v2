@@ -1,3 +1,7 @@
+.flex {
+  display: flex;
+}
+
 .flex--center {
   display: flex; 
   justify-content: center;
@@ -24,7 +28,7 @@
 }
 
 .grid--aside {
-  display: flex;
-  
-  // overflow: hidden;  
+  display: grid;
+  grid-template-columns: 220px 1fr;
+  overflow: hidden; 
 }
