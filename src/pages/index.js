@@ -7,7 +7,7 @@ const IndexPage = ({ data }) => (
   <Layout>
     <SEO title="Home" keywords={[`David Crandall`, `web developer`, `react`]} />
     {/* <Navbar />     */}
-    <div className="grid--aside">
+    <div className="flex">
       <header className="header rel">
         <div className="cover flex--center flex--col">
           <h1>David Crandall</h1>
