@@ -7,9 +7,9 @@ const IndexPage = ({ data }) => (
   <Layout>
     <SEO title="Home" keywords={[`David Crandall`, `web developer`, `react`]} />
     {/* <Navbar />     */}
-    <div className="flex-center">
-      <header className="header header--flex">
-        <div>
+    <div className="grid--aside">
+      <header className="header rel">
+        <div className="cover flex--center flex--col">
           <h1>David Crandall</h1>
           <h3>Full Stack Web Developer</h3>
           <p className="content">
